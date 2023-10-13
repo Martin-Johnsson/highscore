@@ -1,0 +1,25 @@
+<section>
+  <div class="gamesMainContent">
+    <div>
+      <img src="<%= game.image_url%>" alt="Image of the game" class="height" />
+    </div>
+    <div>
+      <h1><%= game.title%></h1>
+      <small><%=game.release_date.getFullYear();%>, <%=game.name %></small>
+      <p><%=game.description%></p>
+    </div>
+  </div>
+</section>
+<section>
+  <h2 class="textAlignCenter">Highscores</h2>
+  <div class="scoreCard pb-2">
+      <% highscores.forEach( player => { %>
+      <div class="highScoreCard">
+        <p class="mt-4">
+          <%= player.player%>, <%=
+          player.score_date.toLocaleDateString('se-SE')%>
+        </p>
+        <p class="fontWeightBold mt-4"><%= player.score %></p>
+      </div>
+      <% }) %>
+</section>

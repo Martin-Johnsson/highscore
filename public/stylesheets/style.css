@@ -1,0 +1,190 @@
+/* General styles */
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display:flex;
+  flex-direction:column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+.marginBottom {
+ margin-bottom: 2rem;
+}
+.marginTop {
+  margin-top: 2rem;
+ }
+.padding-bottom {
+  padding-bottom: 1em;
+}
+.paddingBottomTwoEm {
+  padding-bottom: 2em;
+}
+.flexbox {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.flexbox div {
+  width: auto;
+}
+
+.scoreCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem;
+}
+
+.scoreCard > div {
+  flex-shrink: 1;
+  flex-basis: 100%;
+  border: 3px solid black
+}
+.textAlignCenter {
+ text-align: center;
+
+}
+.flexboxRight {
+justify-content:end
+}
+
+.fontWeightBold {
+  font-weight:bold
+}
+
+.noBoldText {
+  font-weight:normal
+}
+.borderThreePxSolidBlack {
+border: 3px solid black
+}
+/* General styles end */
+
+/* Header and footer */
+
+.headerAndFooterBackground {
+  background:lightgrey;
+
+}
+
+.headerAndFooterBorder{
+  background:lightgrey;
+ 
+
+}
+
+.footerSizing {
+  margin-top: auto;
+  background:lightgrey;
+  padding: 2em;
+  width: auto;
+  
+}
+/* Header and footer end */
+
+/* Test Marking */
+.testMarking {
+  border-color: red;
+  border: 5px solid red
+}
+/* Test Marking end */
+/* search Page game-boxes */
+
+.gameCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 1.5rem;
+ 
+}
+
+.gameCard > div {
+  flex-shrink: 1;
+  flex-basis: 100%;
+  border: 3px solid black;
+  
+  
+}
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.highScoreCard {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: auto;
+  align-content: start
+}
+.highScoreCard > div {
+  flex: 0 1 auto;
+  
+}
+
+.titelAndInfoFlexBox {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-start;
+  align-content: start
+}
+.titelAndInfoFlexBox > * {
+  flex: 0 1 auto;
+}
+.imgFlexBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  align-items: auto;
+  align-content: flex-end
+}
+.imgFlexBox > * {
+  flex: 1 1 auto;
+}
+
+
+.height {
+  height: 20rem;
+}
+
+.gamesMainContent {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  align-content: start
+}
+.gamesMainContent > div {
+  flex: 1 1 auto;
+  margin: 10px;
+}
+.newGameFlexBox {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+.newGameFlexBox > div {
+  flex: 1 1 auto;
+}
+
+
+.topMarginOneEm {
+  margin-top: 1em;
+}
+
+.leftMarginOneEm {
+  margin-left: 1em;
+}
+
+.hOneSmall {
+  font-size:1.5em;
+} 

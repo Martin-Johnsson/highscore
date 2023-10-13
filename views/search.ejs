@@ -1,0 +1,25 @@
+<section>
+  <div>
+    <h1 class="marginBottom marginTop textAlignCenter hOneSmall">
+      Hittade <%= games.length %> träff(ar) på "<%= searchTerm %>"
+    </h1>
+  </div>
+  <div>
+    <% games.forEach(game => { %>
+    <a
+      class="text-decoration-none text-black"
+      href="/games/<%= game.url_slug %>"
+    >
+      <div class="borderThreePxSolidBlack pb-2">
+        <div class="highScoreCard">
+          <h1><%= game.title %></h1>
+        </div>
+        <div class="highScoreCard">
+          <p><%= game.name %>, <%= game.release_date.getFullYear() %></p>
+          <img src="<%= game.image_url %>" alt="Picture of the game" />
+        </div>
+      </div>
+    </a>
+  </div>
+  <% }) %>
+</section>
