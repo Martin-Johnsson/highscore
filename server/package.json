@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "cors": "2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.22"
   }
 }
