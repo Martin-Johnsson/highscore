@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+import { model, Schema } from 'mongoose';
 
-const gameSchema = new mongoose.Schema({
+const GameSchema = new Schema({
   title: {
     type: String,
     required: true,
@@ -14,7 +14,7 @@ const gameSchema = new mongoose.Schema({
     max: 50,
   },
   genre_id: {
-    type: number,
+    type: Number,
     required: true,
   },
   release_date: {
@@ -35,4 +35,6 @@ const gameSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Game', gameSchema);
+const GamesModel = model('Game', GameSchema);
+
+export default GamesModel;

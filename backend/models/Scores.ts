@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+import { model, Schema } from 'mongoose';
 
-const scoreSchema = new mongoose.Schema({
+const ScoreSchema = new Schema({
   game: {
     type: String,
     required: true,
@@ -27,4 +27,6 @@ const scoreSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('Score', scoreSchema);
+const ScoresSchema = model('scores', ScoreSchema);
+
+export default ScoresSchema;
