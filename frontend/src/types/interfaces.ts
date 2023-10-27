@@ -1,1 +1,3 @@
-export interface IGamesState {}
+export interface IGenresState {
+  genreData: string[] | [];
+}
