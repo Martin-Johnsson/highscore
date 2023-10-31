@@ -1,5 +1,11 @@
+import Genres from '../../components/genres/Genres';
+
 const Home = () => {
-  return <section>Home</section>;
+  return (
+    <>
+      <Genres />
+    </>
+  );
 };
 
 export default Home;
