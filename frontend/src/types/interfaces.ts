@@ -1,3 +1,7 @@
 export interface IGenresState {
-  genreData: string[] | [];
+  genreData: IGenresData[] | [];
+}
+export interface IGenresData {
+  _id: string;
+  name: string;
 }
