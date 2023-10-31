@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { IGenresState } from '../../types/interfaces';
+import { IGenresData, IGenresState } from '../../types/interfaces';
 
 const initialState: IGenresState = {
   genreData: [],
@@ -10,7 +10,7 @@ const genresSlice = createSlice({
   name: 'genres',
   initialState,
   reducers: {
-    setGenreData: (state, action: PayloadAction<string[]>) => {
+    setGenreData: (state, action: PayloadAction<IGenresData[]>) => {
       state.genreData = action.payload;
     },
   },
