@@ -1,6 +1,9 @@
 import { model, Schema } from 'mongoose';
 
 const GameSchema = new Schema({
+  _id: {
+    type: String,
+  },
   title: {
     type: String,
     required: true,
